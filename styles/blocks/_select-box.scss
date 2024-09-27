@@ -1,0 +1,8 @@
+.select-box {
+  &__item {
+    cursor: pointer;
+    font-family: var(--font-family-medium);
+    font-size: 0.875rem;
+    padding-right: 14px;
+  }
+}

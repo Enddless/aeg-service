@@ -1,0 +1,85 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-family-base);
+  font-size: 1rem;
+  font-weight: 400;
+  height: 100%;
+  line-height: 1;
+  width: 100%;
+  user-select: none;
+}
+:active,
+:focus,
+a:active,
+a:focus {
+  outline: none;
+}
+
+aside,
+footer,
+header,
+nav {
+  display: block;
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+  font-family: inherit;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+li,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+button {
+  cursor: pointer;
+}
+sup {
+  color: inherit;
+}
+
+input {
+  @include fluid-text(16, 14);
+  border: none;
+  background: transparent;
+  border-radius: 0.625rem;
+  font-family: var(--font-family-medium);
+  max-width: 211px;
+  padding: 14px 18px 14px 44px;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+::placeholder {
+  @include fluid-text(16, 14);
+}

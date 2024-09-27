@@ -1,0 +1,22 @@
+.repair {
+  @include tablet {
+    & .grid--4 {
+      --gridColumns: 3;
+    }
+  }
+  @include mobile {
+    & .grid--4 {
+      --gridColumns: 1;
+    }
+  }
+  &__list {
+    padding-top: 50px;
+  }
+  &__item {
+    &-title {
+      font-family: var(--font-family-bold);
+      font-size: 1.125rem;
+      margin-top: 20px;
+    }
+  }
+}

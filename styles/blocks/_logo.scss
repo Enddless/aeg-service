@@ -1,0 +1,17 @@
+.logo {
+  align-items: flex-end;
+  display: flex;
+  padding-right: 15px;
+  font-family: var(--font-family-boldItalic);
+
+  & span:first-child {
+    font-size: 32px;
+    letter-spacing: -0.06em;
+    line-height: 32px;
+    white-space: nowrap;
+  }
+  & span:last-child {
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+  }
+}

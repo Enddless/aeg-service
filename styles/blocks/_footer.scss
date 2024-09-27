@@ -1,0 +1,131 @@
+.footer {
+  color: var(--cl-footer);
+  font-family: var(--font-family-medium);
+  align-items: stretch;
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__logo {
+    color: var(--cl-footer-logo);
+
+    & span:first-child {
+      letter-spacing: normal;
+    }
+
+    & span:last-child {
+      @include fluid-text(18, 16);
+
+      margin-left: 1px;
+      line-height: 1.5rem;
+    }
+  }
+  &__time {
+    @include fluid-text(14, 12);
+
+    margin-top: 8px;
+  }
+
+  &__about {
+    @include fluid-text(14, 12);
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  &__contacts {
+    & > a:first-child {
+      @include fluid-text(18, 16);
+
+      color: var(--cl-footer-contacts);
+      font-family: var(--font-family-bold);
+      line-height: 1.5rem;
+    }
+    & p {
+      margin-top: 6px;
+    }
+  }
+  &__address {
+    align-items: center;
+    display: flex;
+    padding-top: 2px;
+    gap: 14px;
+    color: var(--cl-footer-contacts);
+
+    & > p {
+      @include fluid-text(16, 14);
+    }
+  }
+  &__rating {
+    @include fluid-text(14, 12);
+
+    &-stars,
+    &-description {
+      margin-top: 6px;
+    }
+  }
+
+  &__pages {
+    display: flex;
+    flex-direction: column;
+    padding-left: 113px;
+
+    @include tablet {
+      padding-left: 0;
+    }
+  }
+  &__box {
+    display: flex;
+    color: var(--cl-footer-box);
+    font-family: var(--font-family-medium);
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+  }
+
+  &__column {
+    max-width: 300px;
+    width: 100%;
+
+    &-title {
+      color: var(--cl-footer-box-name);
+      font-family: var(--font-family-bold);
+      @include fluid-text(18, 16);
+    }
+
+    &-list {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      padding-top: 12px;
+
+      & a:hover {
+        color: var(--color-main-brand);
+      }
+    }
+
+    &-item {
+      @include fluid-text(16, 14);
+
+      line-height: 1.3125rem;
+      margin-bottom: 8px;
+      transition: var(--transition-duration);
+    }
+  }
+
+  &__helpers {
+    @include fluid-text(14, 12);
+
+    margin-top: 10px;
+    max-width: 780px;
+    text-align: justify;
+  }
+}

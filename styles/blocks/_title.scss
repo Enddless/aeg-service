@@ -1,0 +1,5 @@
+.title {
+  @include fluid-text(36, 26);
+  font-family: var(--font-family-bold);
+  text-align: center;
+}

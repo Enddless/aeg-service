@@ -1,0 +1,27 @@
+.card {
+  &__item {
+    align-items: center;
+    border: 1px solid rgba(32, 32, 32, 0.06);
+    border-radius: var(--br-card);
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    text-align: center;
+    &--light {
+      background: var(--bg-card);
+      padding: 20px 20px 52px;
+    }
+    &--outline {
+      justify-content: center;
+      min-height: 255px;
+      padding: 20px 20px 40px;
+      position: relative;
+      transition: var(--transition-duration);
+      @include hover {
+        cursor: pointer;
+        box-shadow: 0 12px 32px rgba(0, 11, 51, 0.12);
+        border: 1px solid var(--color-main-brand);
+      }
+    }
+  }
+}

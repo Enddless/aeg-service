@@ -1,0 +1,13 @@
+.section {
+  padding: var(--section-padding-y) 0;
+  &-hero,
+  &-how,
+  &-offer {
+    background: #f5f5f5;
+    padding-bottom: 66px;
+  }
+  &-footer {
+    background-color: #202020;
+    padding: 50px 0;
+  }
+}
