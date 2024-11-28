@@ -2,6 +2,7 @@
   &-inner {
     align-items: stretch;
     display: flex;
+    justify-content: center;
 
     @include mobile {
       flex-direction: column;
@@ -48,28 +49,5 @@
     margin: 14px auto 0;
     max-width: 320px;
     text-align: center;
-  }
-  &-map {
-    flex-grow: 1;
-    padding-left: 97px;
-    @include tablet {
-      padding-left: 30px;
-      & .ymaps-2-1-79-map {
-        max-width: 450px;
-      }
-    }
-    @include mobile {
-      padding-left: 0;
-      & .ymaps-2-1-79-map {
-        max-width: 100%;
-        width: 100% !important;
-      }
-    }
-  }
-  .offer-map div,
-  .offer-map iframe {
-    border-radius: var(--br-card);
-    height: 100% !important;
-    width: 100% !important;
   }
 }

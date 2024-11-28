@@ -1541,6 +1541,9 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (max-width: 767.9px) {
   .offer-inner {
@@ -1595,33 +1598,4 @@ input {
   margin: 14px auto 0;
   max-width: 320px;
   text-align: center;
-}
-.offer-map {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  padding-left: 97px;
-}
-@media (max-width: 1023px) {
-  .offer-map {
-    padding-left: 30px;
-  }
-  .offer-map .ymaps-2-1-79-map {
-    max-width: 450px;
-  }
-}
-@media (max-width: 767.9px) {
-  .offer-map {
-    padding-left: 0;
-  }
-  .offer-map .ymaps-2-1-79-map {
-    max-width: 100%;
-    width: 100% !important;
-  }
-}
-.offer .offer-map div,
-.offer .offer-map iframe {
-  border-radius: var(--br-card);
-  height: 100% !important;
-  width: 100% !important;
 }
